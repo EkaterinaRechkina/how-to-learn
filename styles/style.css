@@ -211,6 +211,7 @@
   padding-top: 90px;
   padding-bottom: 90px;
   position: relative;
+  z-index: -2;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -259,7 +260,7 @@
   overflow: hidden;
   width: 877px;
   height: 877px;
-  z-index: 0; /*При отрицательном уходит за фон*/
+  z-index: -1;
 }
 
 /*Footer*/
