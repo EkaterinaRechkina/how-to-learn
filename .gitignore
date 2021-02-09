@@ -1,0 +1,8 @@
+# Игнорировать каталог node_modules 
+node_modules/ 
+
+# Игнорирование
+package.json/
+
+# Игнорирование 
+package-lock.json/ 
