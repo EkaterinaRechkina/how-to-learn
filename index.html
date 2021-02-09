@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./blocks/vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Научиться учиться</title>
   </head>
@@ -29,7 +29,7 @@
           src="./images/header-image.png"
           alt="Основная иллюстрация"
         />
-        <div class="header__square-pic"></div>
+        <div class="header__square-pic rotation"></div>
       </header>
       <main class="content">
         <section class="description">
@@ -168,9 +168,9 @@
           </div>
         </section>
         <section class="feynman">
-          <h2 class="feyman__title">Метод Феймана</h2>
-          <p class="feyman__subtitle">Выучить и не забыть</p>
-          <a href="#" class="feyman__link">Подробнее →</a>
+          <h2 class="feynman__title">Метод Феймана</h2>
+          <p class="feynman__subtitle">Выучить и не забыть</p>
+          <a href="#" class="feynman__link">Подробнее →</a>
         </section>
         <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
@@ -232,13 +232,16 @@
               получить навыки и знания, которые приносят успех в школе, карьере
               и жизни.
             </p>
-              <h4 class="khan__quote-author">Джордж Лукас</h4>
-              <h5 class="khan__quote-author-subline">Кинорежиссер, продюсер
-              </h5>
-              <div class="khan__book-container">
-                <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Книга">
-                <a class="khan__buy-link" href="">Купить книгу →</a>
-              </div>
+            <h4 class="khan__quote-author">Джордж Лукас</h4>
+            <h5 class="khan__quote-author-subline">Кинорежиссер, продюсер</h5>
+            <div class="khan__book-container">
+              <img
+                class="khan__book-pic"
+                src="./images/khan-book.jpg"
+                alt="Книга"
+              />
+              <a class="khan__buy-link" href="">Купить книгу →</a>
+            </div>
           </div>
         </section>
         <section class="kaufman">
@@ -310,21 +313,37 @@
               </p>
             </li>
           </ul>
-          <div class="kaufman__triangle"></div>
+          <div class="kaufman__triangle rotation"></div>
         </section>
-        
+
         <section class="resources">
           <h2 class="section-title">Полезные ресурсы</h2>
-          <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+          <p class="section-subtitle">
+            Больше материалов о техниках и лайфхаках обучения
+          </p>
           <div class="resources__logo-zone">
-            <img src="./images/resources-arzamas.svg" alt="Арзамас" class="resources__logo">
-            <img src="./images/resources-n1.svg" alt="Н+1" class="resources__logo">
-            <img src="./images/resources-strelka.svg" alt="Стрелка" class="resources__logo">
-            <img src="./images/resources-polka.svg" alt="Полка" class="resources__logo">
+           <a class="resources__link" href="https://arzamas.academy/"><img
+              src="./images/resources-arzamas.svg"
+              alt="Арзамас"
+              class="resources__logo"
+            /></a> 
+            <a class="resources__link" href="https://nplus1.ru/"><img
+              src="./images/resources-n1.svg"
+              alt="Н+1"
+              class="resources__logo"
+            /></a>
+            <a class="resources__link" href="https://strelka.com/ru"> <img
+              src="./images/resources-strelka.svg"
+              alt="Стрелка"
+              class="resources__logo"
+            /></a>
+            <a class="resources__link" href="https://polka.academy/"> <img
+              src="./images/resources-polka.svg"
+              alt="Полка"
+              class="resources__logo"
+            /></a>
           </div>
         </section>
-
-
       </main>
       <footer class="footer">
         <div class="footer__columns">
@@ -337,8 +356,7 @@
 
             <p class="footer__author">&copy; 2019. Виктор Абанькин</p>
           </div>
-
-          <nav class="footer__column footer__column_content_info">
+<nav class="footer__column footer__column_content_info">
             <h3 class="footer__column-heading">О Практикуме</h3>
             <ul class="footer__column-link">
               <li><a href="#" class="footer__column-links">Главная</a></li>
@@ -346,12 +364,12 @@
               <li><a href="#" class="footer__column-links">Наставники</a></li>
             </ul>
           </nav>
-
+          
           <nav class="footer__column footer__column_content_social">
             <h3 class="footer__column-heading">Соцсети</h3>
             <ul class="footer__column-link">
               <li>
-                <a href="#" class="footer__column-links"
+                <a href="https://www.facebook.com/yandex.praktikum/" class="footer__column-links"
                   ><img
                     class="footer__social-icon"
                     src="./images/facebook_color_white.svg"
@@ -361,7 +379,7 @@
                 >
               </li>
               <li>
-                <a href="#" class="footer__column-links"
+                <a href="https://vk.com/yandex.praktikum" class="footer__column-links"
                   ><img
                     class="footer__social-icon"
                     src="./images/vk_color_white.svg"
@@ -371,7 +389,7 @@
                 >
               </li>
               <li>
-                <a href="#" class="footer__column-links"
+                <a href="https://www.instagram.com/yndx.praktikum/?hl=ru" class="footer__column-links"
                   ><img
                     class="footer__social-icon"
                     src="./images/instagram_color_white.svg"
@@ -382,6 +400,7 @@
               </li>
             </ul>
           </nav>
+          
         </div>
       </footer>
     </div>
