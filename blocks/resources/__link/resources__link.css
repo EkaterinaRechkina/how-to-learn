@@ -1,5 +1,6 @@
 .resources__link {
   transition: color 2s linear 2s;
+  list-style-type: none;
 }
 .resources__link:hover {
   opacity: 70%;
